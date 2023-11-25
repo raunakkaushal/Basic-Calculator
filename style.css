@@ -1,0 +1,25 @@
+body {
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    background-color: floralwhite;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+input,
+select,
+button {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+}
+
+p {
+    font-size: 25px;
+    color: red;
+}
