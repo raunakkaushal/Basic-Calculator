@@ -1,5 +1,4 @@
 body {
-    background-color: skyblue;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,18 +8,21 @@ body {
 }
 
 #calculator {
-    background-color: rgba(255,255,255,0.7);
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 300px;
     width: 120%;
-    background-image: url('image-1.jpg'); /*background image */
+    border: 2px double black;
+    background-image:url('image-1.jpg'); /*background image */
     background-size: cover; /* make sure the image covers the whole div */
     background-position: center; /* Centering the image */
     background-repeat: no-repeat; /*not repeat the image */
     position: relative; /* text is above the background image */
+}
+#calculator:hover{
+    transition: .5s;
+    box-shadow: 0px 0px 10px black;
 }
 #calculator::before {
     content: '';
@@ -41,26 +43,30 @@ body {
 
 
 h2 {
-    margin-bottom: 20px;
+    color: white;
     font-size: 24px;
-    color: #333;
+    padding: 5px 0px;
+    margin-top: -40px;
+    box-shadow: 2px 2px 5px black;
+    text-shadow: 1px 1px 0px black;
+    border-radius: 50px;
+    background-color:rgba(0, 0, 0, .8);
 }
 
 label {
     display: block;
     font-size: 16px;
-    margin-bottom: 5px;
     text-align: left;
 }
 
 input,
 select,
 button {
-    font-size: 16px;
     margin: 5px 0;
     padding: 5px;
     border-radius: 12px;
-    border: 1px solid #ccc;
+    border: 1px dotted black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
     width: 100%;
 }
 
@@ -81,8 +87,8 @@ button:hover {
 }
 
 p {
-    font-size: 25px;
     color: red;
-    margin-top: 20px;
+    font-size: larger;
     font-weight: bold;
+    text-shadow: 1px 1px 0px yellow;
 }
