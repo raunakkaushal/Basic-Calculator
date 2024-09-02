@@ -41,5 +41,5 @@ function calculate() {
 
 //function to display the result
 function displayResult(message) {
-    document.getElementById('result').innerText = `Result: ${message}`;
+    document.getElementById('result').innerText = `Result : ${message}`;
 }
